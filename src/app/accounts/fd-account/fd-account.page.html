@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>fd-account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <div class="ion-text-center">
+      <h1>Open New Fixed Deposit</h1>
+      <p>Please fill in the details below.</p>
+      <ion-label class="ion-float-right ion-padding"
+        >*All Fields are mandatory*</ion-label
+      >
+      <p></p>
+    </div>
+  </ion-item>
+
+  <ion-item>
+    <div class="ion-justify-content-around add-account">
+      <ion-label>-Select An Account-</ion-label>
+      <ion-select placeholder="Select Account">
+        <ion-select-option value="account1">To Self</ion-select-option>
+        <ion-select-option value="account2">SMS Corporation</ion-select-option>
+        <ion-select-option value="account3">Society</ion-select-option>
+      </ion-select>
+    </div>
+  </ion-item>
+
+  <ion-item>
+    <ion-list>
+      <ion-radio-group value="biff">
+        <ion-list-header>
+          <ion-label>Place of Recurring Deposit</ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Home Branch</ion-label>
+          <ion-radio slot="start" value="biff"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Others</ion-label>
+          <ion-radio slot="start" value="Others"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-item>
+
+  <div class="ion-padding">
+    <ion-item>
+      <ion-label>State</ion-label>
+      <ion-input type="text" placeholder="Enter State"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>City</ion-label>
+      <ion-input type="text" placeholder="Enter City"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Branch</ion-label>
+      <ion-input type="text" placeholder="Enter Branch"></ion-input>
+    </ion-item>
+  </div>
+
+
+  <ion-item>
+    <ion-label>State</ion-label>
+      <ion-input type="text" placeholder="Enter State"></ion-input>
+  </ion-item>
+
+
+
+    <ion-button class="ion-text-center ion-padding" (click)="onSubmit()">Submit</ion-button>
+
+
+</ion-content>

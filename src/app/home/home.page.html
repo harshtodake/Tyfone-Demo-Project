@@ -1,20 +1,32 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <h1 class="ion-text-center ion-padding">Credit Union</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list class="ion-padding">
+          <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+          <ion-buttons class="ion-padding ion-justify-content-center">
+            <ion-button color="primary" fill="outline" (click)="onLogin()"
+              >signin</ion-button
+            >
+          </ion-buttons>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

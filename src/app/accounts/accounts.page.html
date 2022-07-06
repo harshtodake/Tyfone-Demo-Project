@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>accounts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-sm="6" off-set="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Saving Accounts</ion-card-title>
+            <ion-card-subtitle>Total Savings</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content> {{ 10000 | currency }}  </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-card>
+          <ion-item (click)="openRD()">
+            <ion-label>Open RD Account</ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-item>
+          <ion-item (click)="openFD()">
+            <ion-label>Open FD Account</ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-item>
+          <ion-item (click)="openDemat()">
+            <ion-label>Open Demat Account</ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-item>
+</ion-content>
